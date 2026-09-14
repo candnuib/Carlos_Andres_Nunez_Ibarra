@@ -1,7 +1,9 @@
 Experimento guiado.
 Semilla 7:
 python3 robot_exploracion_explotacion.py --modo exploracion --semilla 7
+
 <img width="336" height="243" alt="image" src="https://github.com/user-attachments/assets/7f5a93c1-e2f6-4b2a-9654-c539d5924d67" />
+
 python3 robot_exploracion_explotacion.py --modo explotacion --semilla 7
 <img width="334" height="246" alt="image" src="https://github.com/user-attachments/assets/f7f2cc38-180c-4e13-b405-c812410af41c" />
 Semilla 21:
