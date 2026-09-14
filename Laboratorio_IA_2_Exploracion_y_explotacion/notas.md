@@ -44,4 +44,4 @@ python3 robot_exploracion_explotacion.py --modo explotacion --semilla 42
 
 <img width="337" height="248" alt="image" src="https://github.com/user-attachments/assets/0773b0df-476e-40b8-8cf8-ed40dae253ab" />
 
-
+AL finalizar las pruebas, mi predicción con respecto al comportamiento fueron acertadas, la diversidad aumento, esto se debe a que aumente la probabilidad de mutacion en ambos escenarios (exploracion y explotacion). Sin hacer una pueba puedo concluir que si yo bajo esa probabilidad, la diversidad sera menor.
