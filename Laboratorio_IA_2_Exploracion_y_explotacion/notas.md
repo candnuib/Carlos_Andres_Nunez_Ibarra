@@ -29,3 +29,19 @@ python3 robot_exploracion_explotacion.py --modo exploracion --semilla 42
 python3 robot_exploracion_explotacion.py --modo explotacion --semilla 42
 
 <img width="344" height="246" alt="image" src="https://github.com/user-attachments/assets/0a0ab5e7-7c9f-44f5-aa22-307bd9c194f6" />
+
+Modificación a la tasa de mutacion.
+
+<img width="373" height="82" alt="image" src="https://github.com/user-attachments/assets/482e73b3-5178-43dc-bf2b-a0df79dcd1a2" />
+
+En este caso aumente la taza por lo tanto en mi predicción creo que el valor de diversidad aumentara notablemente en comparación a anteriores pruebas.
+
+python3 robot_exploracion_explotacion.py --modo exploracion --semilla 42
+
+<img width="344" height="244" alt="image" src="https://github.com/user-attachments/assets/a523d53f-a3e5-4cde-8c6a-01c06397972b" />
+
+python3 robot_exploracion_explotacion.py --modo explotacion --semilla 42
+
+<img width="337" height="248" alt="image" src="https://github.com/user-attachments/assets/0773b0df-476e-40b8-8cf8-ed40dae253ab" />
+
+
