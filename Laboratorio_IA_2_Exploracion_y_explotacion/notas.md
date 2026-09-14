@@ -128,3 +128,8 @@ python3 robot_exploracion_explotacion_reto.py --semilla 21
 python3 robot_exploracion_explotacion_reto.py --semilla 42
 
 <img width="491" height="367" alt="image" src="https://github.com/user-attachments/assets/1cc10de2-38ae-4990-bf13-794d7222f7be" />
+
+Conclusión:
+
+"Al evaluar el algoritmo con múltiples semillas, se demostró que el desempeño de las estrategias depende fuertemente de la aleatoriedad inicial, habiendo casos (como la semilla 21) donde convergen al mismo tiempo. Sin embargo, el comportamiento consistente radica en la diversidad genética.
+La estrategia de explotación es rápida pero sufre de convergencia prematura (su diversidad colapsa, acercándose a 1/80, creando clones). Por su parte, la estrategia dinámica logra resolver el laberinto manteniendo una diversidad máxima (80/80, individuos únicos). Aunque el modo dinámico puede tardar más generaciones en estabilizarse debido a su alto caos inicial, garantiza una exploración profunda del espacio de búsqueda sin quedarse atrapado en mínimos locales, consolidándose como la estrategia más robusta."
