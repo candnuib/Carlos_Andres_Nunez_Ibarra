@@ -14,10 +14,10 @@ python3 robot_obstaculos.py --semilla 7 --sin-pausa
 
 python3 robot_obstaculos.py --semilla 21 --sin-pausa
 
-<img width="580" height="411" alt="image" src="https://github.com/user-attachments/assets/5fae06a3-3577-40e8-8b74-53bfb4ab9877" />
+<img width="722" height="104" alt="image" src="https://github.com/user-attachments/assets/f736fb56-7351-4f0b-8f53-8a45d33fe87a" />
 
 python3 robot_obstaculos.py --semilla 42 --sin-pausa
 
-<img width="588" height="415" alt="image" src="https://github.com/user-attachments/assets/d5ab4585-20a5-4456-82a8-f3f0ce14903e" />
+<img width="727" height="100" alt="image" src="https://github.com/user-attachments/assets/9cddeeaf-9ed1-4857-898b-c21d00f58e9f" />
 
 
