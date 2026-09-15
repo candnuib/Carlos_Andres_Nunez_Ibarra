@@ -33,3 +33,9 @@ python3 robot_obstaculos.py --semilla 1 --sin-pausa
 python3 robot_obstaculos.py --semilla 51 --sin-pausa
 
 <img width="579" height="84" alt="image" src="https://github.com/user-attachments/assets/279de78a-31f2-42f4-a843-f23495b15ef0" />
+
+5. Cambia una sola penalizacion del fitness y repite el experimento.
+
+Aumente la penalizacion por visitas repetidas.
+
+<img width="307" height="33" alt="image" src="https://github.com/user-attachments/assets/a91d5c9e-7830-49ca-8169-8b3082a1c6be" />
