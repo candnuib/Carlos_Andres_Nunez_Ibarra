@@ -18,6 +18,7 @@ python3 robot_obstaculos.py --semilla 42 --sin-pausa
 
 <img width="727" height="100" alt="image" src="https://github.com/user-attachments/assets/9cddeeaf-9ed1-4857-898b-c21d00f58e9f" />
 
+
 4. Compara los resultados de varias semillas. No uses una sola corrida para armar que un metodo
 es mejor.
 
