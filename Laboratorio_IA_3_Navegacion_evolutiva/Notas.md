@@ -39,3 +39,17 @@ python3 robot_obstaculos.py --semilla 51 --sin-pausa
 Aumente la penalizacion por visitas repetidas.
 
 <img width="307" height="33" alt="image" src="https://github.com/user-attachments/assets/a91d5c9e-7830-49ca-8169-8b3082a1c6be" />
+
+Resultados semilla 7 con modificacion:
+
+<img width="610" height="79" alt="image" src="https://github.com/user-attachments/assets/89029fbe-ee00-4b91-bd37-8bd2f2a593d0" />
+
+Resultados semilla 21 con modificacion:
+
+<img width="581" height="88" alt="image" src="https://github.com/user-attachments/assets/2c6f5613-bb32-42b6-a64e-6d04bbf34a91" />
+
+Resultados semilla 42 con modificacion:
+
+<img width="581" height="85" alt="image" src="https://github.com/user-attachments/assets/d73405ca-f3a7-40bb-8ae5-8cb19c7f212f" />
+
+
