@@ -107,6 +107,15 @@ python3 robot_obstaculos_reto.py  --modo cruce --sin-pausa
 
 <img width="409" height="164" alt="image" src="https://github.com/user-attachments/assets/1a469979-dd0c-48a2-ac78-5df92dd5b679" />
 
+Semilla 7
+<img width="397" height="191" alt="image" src="https://github.com/user-attachments/assets/bb90d872-685d-4b44-a333-605b8fd03668" />
+
+semilla 7
+<img width="416" height="177" alt="image" src="https://github.com/user-attachments/assets/64e38dc1-abd1-4024-8f9d-564e326b88fb" />
 
 
+
+<img width="601" height="116" alt="image" src="https://github.com/user-attachments/assets/92969ffd-4a24-4138-b6c2-253fe7f7be15" />
+
+tabla
 <img width="595" height="109" alt="image" src="https://github.com/user-attachments/assets/e3aa472c-0ad3-4081-b2ab-239d99f008d4" />
