@@ -70,3 +70,43 @@ busqueda?
 El problema esta en los obstaculos, ya que al chocar con ellos, se penaliza.
 El algoritmo de busqueda esta en la mutacion y cruce. Logrando buscar nuevos caminos para solucionar el problema.
 
+Reto modificacion:
+
+1. Cambiar la posición de dos obstáculos
+De qué trata: Modificar un par de coordenadas en la lista OBSTACULOS asegurándoce de no crear un muro cerrado que haga imposible llegar a la meta.
+
+Enfoque: Se centra en el entorno. Lo interesante aquí es observar cómo el algoritmo se adapta a un laberinto distinto.
+
+2. Modificar la longitud del ADN y explicar el efecto
+De qué trata: Cambiar la variable LONGITUD_ADN (actualmente en 18) a un número mayor o menor, y analizar qué pasa.
+
+Enfoque: Se centra en los límites del individuo. Si se acorta mucho, el robot físicamente no tendrá suficientes pasos para llegar (se quedará sin "gasolina"). Si se alarga demasiado (ej. 100 pasos), el espacio de combinaciones posibles crece tanto que al algoritmo le costará mucho más tiempo converger en una solución.
+
+3. Implementar cruce uniforme (Uniform Crossover)
+De qué trata: Modificar la función cruzar. Actualmente usa "cruce de un punto" (corta a los padres por la mitad y pega el inicio de uno con el final del otro). El cruce uniforme consiste en lanzar una moneda para cada gen (cada paso); así, el paso 1 puede ser del Padre A, el paso 2 del Padre B, el paso 3 del Padre B, el paso 4 del Padre A, etc.
+
+Enfoque: Se centra en los operadores genéticos.
+
+4. Cambiar una recompensa/penalización del fitness
+De qué trata: Modificar los valores dentro de la función evaluar(adn). Por ejemplo, castigar los choques con -100 en lugar de -30, o premiar más dar pasos útiles.
+
+Enfoque: Al cambiar estos valores se altera la "presión selectiva". Si se castigan demasiado los choques, los robots podrían volverse "miedosos" y preferir quedarse quietos en el inicio para no perder puntos. Se tienes que encontrar un equilibrio y justificar por qué el cambio funciona (o por qué hace que el algoritmo falle).
+
+5. Registrar la mejor puntuación por generación y describir su evolución
+De qué trata: El código ya guarda un historial de los puntos, pero tendrías que agregar código para imprimir una tabla, exportar un archivo CSV o hacer una gráfica simple en la terminal que muestre cómo va subiendo el puntaje generación tras generación.
+
+Enfoque: Se centra en el análisis de datos. Se observa cómo la puntuación sube rapidísimo en las primeras generaciones y luego se estanca cuando encuentra el camino óptimo (convergencia).
+
+Se selecciono el reto 5.
+
+python3 robot_obstaculos_reto.py  --modo mutacion --sin-pausa
+
+<img width="398" height="194" alt="image" src="https://github.com/user-attachments/assets/283dfbde-73a8-441c-b8f1-99cab64ce994" />
+
+python3 robot_obstaculos_reto.py  --modo cruce --sin-pausa
+
+<img width="409" height="164" alt="image" src="https://github.com/user-attachments/assets/1a469979-dd0c-48a2-ac78-5df92dd5b679" />
+
+
+
+<img width="595" height="109" alt="image" src="https://github.com/user-attachments/assets/e3aa472c-0ad3-4081-b2ab-239d99f008d4" />
