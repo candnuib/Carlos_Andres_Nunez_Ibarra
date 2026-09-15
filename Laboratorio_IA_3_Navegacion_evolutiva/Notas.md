@@ -20,4 +20,14 @@ python3 robot_obstaculos.py --semilla 42 --sin-pausa
 
 <img width="727" height="100" alt="image" src="https://github.com/user-attachments/assets/9cddeeaf-9ed1-4857-898b-c21d00f58e9f" />
 
+python3 robot_obstaculos.py --semilla 18 --sin-pausa
 
+<img width="582" height="84" alt="image" src="https://github.com/user-attachments/assets/8677b0bb-1bdd-4977-9473-ffd87505b7a1" />
+
+python3 robot_obstaculos.py --semilla 1 --sin-pausa 
+
+<img width="585" height="83" alt="image" src="https://github.com/user-attachments/assets/ac130e61-294c-4f65-8c43-01a87c6ac40b" />
+
+python3 robot_obstaculos.py --semilla 51 --sin-pausa
+
+<img width="579" height="84" alt="image" src="https://github.com/user-attachments/assets/279de78a-31f2-42f4-a843-f23495b15ef0" />
