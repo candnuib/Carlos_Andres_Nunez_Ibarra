@@ -8,8 +8,6 @@ Yo creo que el que la opcion con mutacion + cruce
 
 python3 robot_obstaculos.py --semilla 7 --sin-pausa
 
-
-
 <img width="730" height="106" alt="image" src="https://github.com/user-attachments/assets/725299af-bab2-4195-bc1e-0b987d74221c" />
 
 python3 robot_obstaculos.py --semilla 21 --sin-pausa
@@ -19,6 +17,9 @@ python3 robot_obstaculos.py --semilla 21 --sin-pausa
 python3 robot_obstaculos.py --semilla 42 --sin-pausa
 
 <img width="727" height="100" alt="image" src="https://github.com/user-attachments/assets/9cddeeaf-9ed1-4857-898b-c21d00f58e9f" />
+
+4. Compara los resultados de varias semillas. No uses una sola corrida para armar que un metodo
+es mejor.
 
 python3 robot_obstaculos.py --semilla 18 --sin-pausa
 
