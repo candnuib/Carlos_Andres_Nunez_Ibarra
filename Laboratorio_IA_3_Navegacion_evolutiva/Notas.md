@@ -52,4 +52,21 @@ Resultados semilla 42 con modificacion:
 
 <img width="581" height="85" alt="image" src="https://github.com/user-attachments/assets/d73405ca-f3a7-40bb-8ae5-8cb19c7f212f" />
 
+1. Por que un robot cercano a la meta puede tener peor puntaje que otro mas lejano?
+
+Porque fue penalizado a lo largo de su recorrido por las caracteristicas del fitness ya sea si choca o tiene visitas repetidas. ademas de que el que esta al inicio tiene sus puntos iniciales intactos.
+
+2. Que ventaja aporta combinar dos padres en lugar de copiar uno solo?
+
+Que se analizan dos rutas que lograron llegar a la meta, solo que se modifica casi la mitad de estos genes. Logrando la explotacion y exploracion.
+
+4. La mayor diversidad final implica necesariamente una mejor solucion?
+
+No necesariamente, pero si hay ma posibilidades de que en esa diversidad este la mejor solucion.
+
+5. Que parte del programa representa el problema y que parte representa el algoritmo de
+busqueda?
+
+El problema esta en los obstaculos, ya que al chocar con ellos, se penaliza.
+El algoritmo de busqueda esta en la mutacion y cruce. Logrando buscar nuevos caminos para solucionar el problema.
 
