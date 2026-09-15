@@ -10,7 +10,7 @@ python3 robot_obstaculos.py --semilla 7 --sin-pausa
 
 
 
-<img width="584" height="418" alt="image" src="https://github.com/user-attachments/assets/a3d06aa0-5d45-408c-87d6-8b9695c4e8d4" />
+<img width="730" height="106" alt="image" src="https://github.com/user-attachments/assets/725299af-bab2-4195-bc1e-0b987d74221c" />
 
 python3 robot_obstaculos.py --semilla 21 --sin-pausa
 
