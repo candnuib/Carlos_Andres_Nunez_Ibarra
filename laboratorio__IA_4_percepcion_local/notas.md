@@ -30,3 +30,32 @@ Para el punto 5, modifique el fitness penalizando cuando hace visitas repetidas.
 Al volver a correr la semilla 42 dio como resultado:
 
 <img width="584" height="103" alt="image" src="https://github.com/user-attachments/assets/1c497c98-d102-472a-be4e-db97c1768743" />
+
+1. Que diferencia hay entre evolucionar una ruta y evolucionar una politica?
+
+Evolucionar una ruta significa buscar una secuencia fija e inalterable de movimientos (por ejemplo: Arriba, Derecha, Derecha, Abajo). Es un plan ciego que el robot recibe antes de empezar y solo funciona si el robot parte de un inicio específico y el mapa nunca cambia. No podiendo modificarlo en el recorrido.
+ 
+Evolucionar una política significa buscar un conjunto de reglas de comportamiento. El robot no memoriza un camino, sino que aprende qué hacer frente a cada estímulo local (por ejemplo: "Si hay un obstáculo arriba y a la izquierda, muévete a la derecha"). La siguiente accion depende de lo que el robot observa en el momento.
+
+2. Por que una politica local puede entrar en un ciclo?
+
+El robot toma decisiones basándose exclusivamente en su percepción inmediata (su observación de 4 bits). Carece de memoria sobre las celdas que ya visitó. Si el robot llega a una posición, ejecuta una acción, y esa acción lo lleva de vuelta a un estado sensorial idéntico que dispara la acción opuesta, se quedará rebotando o atrapado en un bucle infinito entre las mismas celdas (razón por la cual el código implementa un límite de PASOS_MAXIMOS y penaliza las visitas_repetidas en la función de fitness).
+
+3. Que informacion pierde el robot al no conocer su posicion exacta?
+
+Al carecer de coordenadas exactas, el robot pierde por completo el contexto global:
+* Dirección y distancia a la meta: No sabe hacia dónde avanzar para acercarse al objetivo, operando únicamente por "instinto" local.
+* Historial de navegación: No sabe dónde ha estado, lo que le impide reconocer si está caminando en círculos.
+* Mapa general: No puede anticipar callejones sin salida que estén más allá de la celda adyacente que perciben sus sensores.
+
+4. El cruce combina rutas completas o reglas de percepcion? Que efecto puede tener?
+
+La función cruzar combina reglas de percepción, no rutas completas. Intercambia fragmentos del ADN de longitud 16 entre dos padres.
+* Efecto positivo: Puede crear un individuo superior combinando buenos "reflejos" de ambos. Un padre podría tener la regla perfecta para avanzar en     espacios abiertos, mientras que el otro tiene la regla perfecta para bordear esquinas.
+* Efecto negativo: Puede ser destructivo. Romper el ADN a la mitad puede separar un conjunto de reglas que dependían unas de otras para maniobrar       alrededor de una estructura de obstáculos compleja, produciendo un hijo que se atasca fácilmente. Tomando las caracteristicas negativas de los        padres.
+
+5. Una politica que funciona en este mapa funcionaria necesariamente en otro mapa?
+
+No necesariamente funcionaría. Debido a que la función evaluar(adn) prueba a los individuos única y exclusivamente en el entorno definido por INICIO, META y OBSTACULOS, el algoritmo genético es muy propenso a sufrir de sobreajuste (overfitting).
+La política ganadora probablemente no aprendió a "navegar laberintos en general", sino que evolucionó las respuestas exactas para las situaciones visuales locales en el orden específico que requiere este mapa en particular. En un mapa nuevo, el robot podría encontrarse con configuraciones sensoriales para las cuales su política tiene acciones subóptimas o que generan bucles.
+
