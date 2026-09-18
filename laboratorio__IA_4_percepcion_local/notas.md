@@ -82,3 +82,20 @@ Documentación de los Efectos_
 * Con estas modificaciones: Al evaluar el mismo ADN entrenado en el MAPA 1 dentro del MAPA 2, la supervivencia mejora notablemente. El robot no solo avanza en la dirección general correcta (gracias al sensor de meta), sino que es capaz de bordear obstáculos básicos que no había visto antes (gracias a la combinación de sensores y memoria).
 * Conclusión de la prueba: La política ha evolucionado de un memorizador de rutas a un solucionador heurístico reactivo. Aunque todavía puede atascarse en callejones en forma de "U" muy profundos en el MAPA 2 (debido a su falta de mapeo espacial o memoria profunda), ahora es una política generalizable que puede resolver múltiples configuraciones sencillas con un único genoma.
 
+
+Pruebas:
+
+python3 robot_percepcion_reto.py  --semilla 7
+
+<img width="583" height="215" alt="image" src="https://github.com/user-attachments/assets/933d6f70-c694-4475-8685-34097395dbcc" />
+
+python3 robot_percepcion_reto.py  --semilla 21
+
+<img width="614" height="207" alt="image" src="https://github.com/user-attachments/assets/23a5e4d8-dcf4-4e4d-9e32-0c796778f48f" />
+
+python3 robot_percepcion_reto.py  --semilla 42
+
+<img width="570" height="212" alt="image" src="https://github.com/user-attachments/assets/84cefdc9-0f41-434b-b990-120766120b31" />
+
+Conclusion:
+Al incorporar la dirección de la meta y la memoria, el robot ganó una orientación reactiva que le permite dominar rápidamente el entorno de entrenamiento, dejando de depender de rutas memorizadas. Sin embargo, basar su política en una vecindad local y evaluarla en un único mapa introdujo una severa vulnerabilidad al sobreajuste. Al enfrentarse a configuraciones inéditas en un segundo mapa, el robot queda a merced de las reglas aleatorias no exploradas de su genoma ("ADN basura"). Esto explica por qué su éxito en la generalización es inconstante y depende totalmente de la semilla; la percepción local dota al sistema de reflejos útiles, pero sin un entrenamiento multi-entorno, la política carece de la robustez necesaria para garantizar la supervivencia.
