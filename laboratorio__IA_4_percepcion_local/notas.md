@@ -25,8 +25,8 @@ Dentro del archivo pude analiar y ver cada corrida, y en muchos casos ocurre que
 
 Para el punto 5, modifique el fitness penalizando cuando hace visitas repetidas.
 
-<img width="297" height="27" alt="image" src="https://github.com/user-attachments/assets/5e4d06b0-edb9-4d84-9bf9-f3844c36fd62" />
+<img width="288" height="25" alt="image" src="https://github.com/user-attachments/assets/0387dd3f-3523-4e1a-b928-8d8fb1073631" />
 
 Al volver a correr la semilla 42 dio como resultado:
 
-<img width="584" height="98" alt="image" src="https://github.com/user-attachments/assets/b438f823-8d10-4b08-8e23-c73485c51f1f" />
+<img width="584" height="103" alt="image" src="https://github.com/user-attachments/assets/1c497c98-d102-472a-be4e-db97c1768743" />
