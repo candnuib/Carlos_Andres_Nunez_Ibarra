@@ -46,3 +46,9 @@ Introducir regulacion y validacion cruzada:
 
 <img width="647" height="235" alt="image" src="https://github.com/user-attachments/assets/11942b14-098e-4e91-81ca-e5507c51495e" />
 
+Prueba del modelo, metiendo datas para que me de un resultado.
+
+<img width="644" height="241" alt="image" src="https://github.com/user-attachments/assets/20dc5caf-0fc0-4f8f-9adf-d39919f360d7" />
+
+<img width="644" height="255" alt="image" src="https://github.com/user-attachments/assets/eaa8fb0e-bb7f-4d0a-8246-3f3098b34fc9" />
+  
