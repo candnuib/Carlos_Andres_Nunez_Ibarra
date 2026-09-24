@@ -41,3 +41,8 @@ is_male: Creamos una pequeña variable matemática que vale 1 si es niño y 0 si
 weights: Agregamos la fórmula de peso. Inicia en 3.0 kg (peso base de un bebé) y va subiendo conforme aumenta la edad, más un margen de error aleatorio de 2.5 kg (rng.normal(0, 2.5)) para que haya niños más delgados o más robustos de la misma edad.
 
 <img width="216" height="367" alt="image" src="https://github.com/user-attachments/assets/fd1d53de-bfa8-468f-81dc-e8653baec4d4" />
+
+Introducir regulacion y validacion cruzada:
+
+<img width="647" height="235" alt="image" src="https://github.com/user-attachments/assets/11942b14-098e-4e91-81ca-e5507c51495e" />
+
