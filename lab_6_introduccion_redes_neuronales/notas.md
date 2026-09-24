@@ -26,5 +26,4 @@ python3 scripts/train_estatura.py --data data/estatura_ninos.csv --epochs 300
 
 <img width="644" height="253" alt="image" src="https://github.com/user-attachments/assets/4108a206-1925-4576-9de5-c4e813e76128" />
 
-<img width="131" height="364" alt="image" src="https://github.com/user-attachments/assets/776fa83b-ee69-4e3c-93ee-776bc1483e62" />
 
