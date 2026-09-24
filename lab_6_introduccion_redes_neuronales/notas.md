@@ -39,3 +39,5 @@ sexes = rng.choice(['M', 'F'], size=n): Esto crea una lista aleatoria de 'M' y '
 is_male: Creamos una pequeña variable matemática que vale 1 si es niño y 0 si es niña. La usamos en las fórmulas de estatura y peso para agregarles un pequeñísimo incremento a los niños (simulando que estadísticamente hay una ligera diferencia). Esto es excelente si luego quieres entrenar un modelo de Inteligencia Artificial, porque el modelo intentará descubrir esa diferencia.
 
 weights: Agregamos la fórmula de peso. Inicia en 3.0 kg (peso base de un bebé) y va subiendo conforme aumenta la edad, más un margen de error aleatorio de 2.5 kg (rng.normal(0, 2.5)) para que haya niños más delgados o más robustos de la misma edad.
+
+<img width="216" height="367" alt="image" src="https://github.com/user-attachments/assets/fd1d53de-bfa8-468f-81dc-e8653baec4d4" />
