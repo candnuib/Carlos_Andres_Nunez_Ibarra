@@ -80,5 +80,11 @@ Comprobacion instalacion:
 
 Ejecutar el laboratorio
 
+python3 robot_red_neuronal_evolutiva.py
+
 <img width="532" height="390" alt="image" src="https://github.com/user-attachments/assets/e1ed5c50-6e5a-46fc-b2a0-355f4061ec4c" />
 
+python3 robot_red_neuronal_evolutiva.py \\
+--semilla 7 --generaciones 40 --sin-pausa
+
+<img width="520" height="385" alt="image" src="https://github.com/user-attachments/assets/2f91b8b9-3be0-40c0-8ea8-b07e34dfeee6" />
