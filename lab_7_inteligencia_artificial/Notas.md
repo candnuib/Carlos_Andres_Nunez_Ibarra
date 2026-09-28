@@ -9,7 +9,7 @@ Análisis:
 
 Los sensores del robot hacen su trabajo. Simulando un entorno en Python o usando sensores físicos en un microcontrolador, los datos recopilados sobre el entorno inmediato (ej. "hay un obstáculo" o "el camino esta libre") no cambian. Esos datos crudos siguen siendo la forma en que el robot "ve" el mundo.
 
-3. Representación de la Política:
+2. Representación de la Política:
 
 La "política" es el cerebro del robot, un mecanismo que toma los datos de los sensores y decide qué acción ejecutar.
 En un modelo anterior el "ADN" del robot representaba una cadena de movimientos directos (ej. [ U, D, R, L ]) que mutaba si habia obstáculo en frente para evitalo.
