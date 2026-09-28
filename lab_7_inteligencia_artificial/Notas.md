@@ -28,3 +28,19 @@ Respuesta:
 "Sí, podemos conservar la percepción local usando los mismos datos de los sensores como las entradas (inputs) del sistema. Lo que cambia es la representación de la política: dejamos atrás las secuencias estáticas o reglas rígidas y pasamos a usar una red neuronal para mapear esas entradas hacia las acciones (outputs). En nuestro modelo evolutivo, el 'ADN' que cruzamos y mutamos ya no son listas de movimientos, sino que pasa a ser el conjunto de pesos y conexiones de la red neuronal de cada robot."
 
 Entender que el sensor (hardware/percepción) y la política (software/decisión) son módulos independientes que ayudan a diseñar arquitecturas.
+
+Se conserva:
+* La cuadrucula y los obstaculos.
+* Los sensores U, D, L y R.
+* El recorrido del robot.
+* El fitness y el algoritmo evolutivo.
+
+Cambia:
+* La tabla de reglas desaparece.
+* Cada individuo es una red.
+* Los genes son pesos numericos.
+* Se usa PyTorch para decidir.
+
+Idea central.
+La evolucion sigue buscando una buena politica; ahora la politica esta parametrizada por una
+red neuronal.
