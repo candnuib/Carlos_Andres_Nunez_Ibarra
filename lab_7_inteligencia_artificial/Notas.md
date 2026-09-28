@@ -68,3 +68,17 @@ Despues del entrenamiento:
 
 Separar aprender y probar: 
 Esto permite medir si la politica funciona solo en el mapa de entrenamiento o si responde bien a una nueva distribucion de obstaculos.
+
+Laboratorio IA 7: Red neuronal pequena y evolucion por algoritmo genetico.
+
+Construir una red neuronal pequena con PyTorch que controle al robot de percepcion local y evolucionar sus pesos mediante un algoritmo genetico. El mejor individuo se guardara en disco para probarlo posteriormente sobre un mapa modificado a mano.
+
+El algoritmo evolutivo sigue seleccionando comportamientos por fitness. Lo que cambia es la representacion del individuo: antes eran comandos o reglas; ahora son los pesos de una red neuronal.
+
+Comprobacion instalacion:
+<img width="644" height="61" alt="image" src="https://github.com/user-attachments/assets/645e7e26-ee49-4d84-9a77-725713f9831e" />
+
+Ejecutar el laboratorio
+
+<img width="532" height="390" alt="image" src="https://github.com/user-attachments/assets/e1ed5c50-6e5a-46fc-b2a0-355f4061ec4c" />
+
