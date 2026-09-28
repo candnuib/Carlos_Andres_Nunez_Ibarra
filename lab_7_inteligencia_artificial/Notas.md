@@ -27,7 +27,7 @@ Respuesta:
 
 "Sí, podemos conservar la percepción local usando los mismos datos de los sensores como las entradas (inputs) del sistema. Lo que cambia es la representación de la política: dejamos atrás las secuencias estáticas o reglas rígidas y pasamos a usar una red neuronal para mapear esas entradas hacia las acciones (outputs). En nuestro modelo evolutivo, el 'ADN' que cruzamos y mutamos ya no son listas de movimientos, sino que pasa a ser el conjunto de pesos y conexiones de la red neuronal de cada robot."
 
-Entender que el sensor (hardware/percepción) y la política (software/decisión) son módulos independientes que ayudan a diseñar arquitecturas.
+El sensor (hardware/percepción) y la política (software/decisión) son módulos independientes que ayudan a diseñar arquitecturas.
 
 Se conserva:
 * La cuadrucula y los obstaculos.
@@ -41,6 +41,30 @@ Cambia:
 * Los genes son pesos numericos.
 * Se usa PyTorch para decidir.
 
-Idea central.
+Idea central: 
 La evolucion sigue buscando una buena politica; ahora la politica esta parametrizada por una
 red neuronal.
+
+4 sensores -> 8 neuronas + ReLU -> 4 valores de accion
+
+Decision:
+La red calcula un valor para U, D, L y R. El robot ejecuta la accion con mayor valor mediante argmax.
+
+Representacion: 
+En la politica tabular evolucionabamos reglas. Aqui evolucionamos todos los pesos de la red.
+
+Logica: 
+Cuatro entradas representan la percepcion local; la capa oculta combina la informacion y cuatro salidas compiten por controlar el siguiente movimiento.
+
+Durante el entrenamiento:
+* Se prueban muchas redes.
+* Se conserva la mejor.
+* La evolucion puede terminar.
+
+Despues del entrenamiento:
+* Se guardan los pesos en mejor_red.pt.
+* Se carga la misma politica.
+* Se prueba en otro mapa.
+
+Separar aprender y probar: 
+Esto permite medir si la politica funciona solo en el mapa de entrenamiento o si responde bien a una nueva distribucion de obstaculos.
