@@ -88,3 +88,22 @@ python3 robot_red_neuronal_evolutiva.py \\
 --semilla 7 --generaciones 40 --sin-pausa
 
 <img width="520" height="385" alt="image" src="https://github.com/user-attachments/assets/2f91b8b9-3be0-40c0-8ea8-b07e34dfeee6" />
+
+Guardar y cargar el mejor individuo
+
+python3 robot_red_neuronal_evolutiva.py \\
+--generaciones 40 --guardar-mejor mejor_red.pt
+
+<img width="495" height="319" alt="image" src="https://github.com/user-attachments/assets/f3bb194d-2dc5-4d14-8d99-95ce4e085dae" />
+
+<img width="556" height="43" alt="image" src="https://github.com/user-attachments/assets/7506092d-482e-4376-9adf-7318cc18d410" />
+
+Para cargarlo sin evolucionar otra vez:
+
+python3 robot_red_neuronal_evolutiva.py \\
+--cargar-red mejor_red.pt
+
+<img width="496" height="166" alt="image" src="https://github.com/user-attachments/assets/cd166200-e92e-4c5d-bc68-d9951d82c92b" />
+
+Guardar la red separa dos fases del trabajo: primero se aprende una politica y despues se prueba esa misma politica bajo nuevas condiciones.
+
