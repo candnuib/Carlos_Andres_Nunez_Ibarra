@@ -107,3 +107,8 @@ python3 robot_red_neuronal_evolutiva.py \\
 
 Guardar la red separa dos fases del trabajo: primero se aprende una politica y despues se prueba esa misma politica bajo nuevas condiciones.
 
+Probar en un mapa distinto.
+
+Cambio de OBSTACULOS, INICIO o META en el archivo.
+
+<img width="388" height="161" alt="image" src="https://github.com/user-attachments/assets/5f9d818b-79e0-438e-8142-4622f635432b" />
