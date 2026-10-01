@@ -120,3 +120,29 @@ Ya modificado se vuelve a compilar el codigo para caegar sin evolucionar, tomand
 
 <img width="526" height="324" alt="image" src="https://github.com/user-attachments/assets/a7699a8d-8684-466b-86e0-c4c288488898" />
 
+1\. ¿Qué se conserva entre la clase de percepción local y este laboratorio?
+
+Se conserva **la percepción local a través de los sensores del robot**. Los datos que los sensores recopilan sobre el entorno inmediato siguen siendo las entradas (*inputs*) del sistema. También se conserva el objetivo conceptual o la métrica de evaluación (*fitness*) para medir el desempeño del robot. Lo que cambia no son los sensores, sino el mecanismo de toma de decisiones (la política), que pasa de ser una lista estática de reglas/movimientos a una red neuronal.
+
+
+2\. ¿Qué información representa un peso de la red que antes representaba una regla?
+
+Antes, una regla condicional o tabla de decisión asociaba de forma directa una lectura sensorial con una acción fija.
+
+Ahora, **un peso de la red representa la intensidad e influencia matemática de una conexión entre neuronas**. En conjunto con las capas ocultas y los sesgos (*biases*), los pesos determinan cuánto influye cada señal de los sensores en las neuronas de salida (motores o acciones). Los pesos transforman reglas rígidas "si-entonces" en un mapeo funcional continuo entre percepción y acción.
+
+3\. ¿Por qué una red entrenada en un mapa puede fallar en otro mapa?
+
+La red falla porque se ajustó exclusivamente a las condiciones y trayectoria del mapa inicial. Si las entradas de la red solo incluyen lecturas locales inmediatas sin referencia a la posición de la meta, el modelo simplemente **asoció configuraciones de sensores con movimientos que eran exitosos en la geometría de ese mapa específico**. Al cambiar la salida, la meta y agregar nuevos obstáculos, el robot se enfrenta a combinaciones de lecturas no vistas durante el entrenamiento, lo que provoca decisiones erróneas o bloqueos.
+
+4\. ¿La política aprendida generaliza o solo memoriza respuestas locales?
+
+En la configuración actual de tu laboratorio, **la política solo memoriza respuestas o patrones locales adaptados al escenario de entrenamiento**. Al haber entrenado en una sola ruta fija y carecer de información global sobre dónde está el objetivo, la red neuronal no aprende el concepto abstracto de "navegar hacia una meta", sino únicamente a reaccionar ante la secuencia concreta de obstáculos de ese mapa en particular.
+
+5\. ¿Qué cambios permitirían que el robot conociera la dirección de la meta?
+
+Para que el robot entienda hacia dónde dirigirse independientemente del mapa, se pueden implementar las siguientes modificaciones:
+
+* **Agregar la dirección de la meta a las entradas (** **inputs** **) de la red:** Incluir valores sensoriales que indiquen el ángulo o vector relativo hacia la meta (por ejemplo: *"la meta está a 45° a la izquierda"*) y la distancia que falta para llegar.
+* **Entrenar en entornos variables (multiescenario):** Cambiar aleatoriamente el punto de inicio, la posición de la meta y la ubicación de los obstáculos durante cada generación del entrenamiento. Esto fuerza a la red a no memorizar un mapa, sino a aprender a priorizar el vector de la meta mientras esquiva bloqueos.
+* **Ajustar la función de evaluación (** **fitness** **):** Recompensar a la red en cada paso en función de la reducción del ángulo y distancia hacia la meta, promoviendo que la política aprenda la dirección correcta.
