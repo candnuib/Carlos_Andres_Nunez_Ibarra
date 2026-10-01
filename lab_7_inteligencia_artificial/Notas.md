@@ -146,3 +146,38 @@ Para que el robot entienda hacia dónde dirigirse independientemente del mapa, s
 * **Agregar la dirección de la meta a las entradas (** **inputs** **) de la red:** Incluir valores sensoriales que indiquen el ángulo o vector relativo hacia la meta (por ejemplo: *"la meta está a 45° a la izquierda"*) y la distancia que falta para llegar.
 * **Entrenar en entornos variables (multiescenario):** Cambiar aleatoriamente el punto de inicio, la posición de la meta y la ubicación de los obstáculos durante cada generación del entrenamiento. Esto fuerza a la red a no memorizar un mapa, sino a aprender a priorizar el vector de la meta mientras esquiva bloqueos.
 * **Ajustar la función de evaluación (** **fitness** **):** Recompensar a la red en cada paso en función de la reducción del ángulo y distancia hacia la meta, promoviendo que la política aprenda la dirección correcta.
+
+Experimento y tabla de resultados
+
+Semilla 7.
+
+python3 robot_red_neuronal_evolutiva.py  --semilla 7 --generaciones 40 --sin-pausa --guardar-mejor mejor_red.pt
+
+<img width="543" height="174" alt="image" src="https://github.com/user-attachments/assets/5c677ab3-b0f6-4824-ad6e-71bb652301d3" />
+
+python3 robot_red_neuronal_evolutiva.py --cargar-red mejor_red_7.pt
+
+<img width="511" height="173" alt="image" src="https://github.com/user-attachments/assets/8699f216-39f6-4f9a-b155-612be1167fe5" />
+
+python3 robot_red_neuronal_evolutiva_1.py --cargar-red mejor_red_7.pt
+
+<img width="499" height="175" alt="image" src="https://github.com/user-attachments/assets/feae740d-b496-4baa-96f4-f111fcaf18b8" />
+
+Semilla 21.
+
+<img width="541" height="181" alt="image" src="https://github.com/user-attachments/assets/8068f5f2-6636-4634-b61e-3b3000251111" />
+
+python3 robot_red_neuronal_evolutiva_1.py --cargar-red mejor_red_21.pt
+
+<img width="495" height="329" alt="image" src="https://github.com/user-attachments/assets/0c52b60b-c098-4862-bb2a-7fa7baecb72b" />
+
+Semilla 42.
+
+python3 robot_red_neuronal_evolutiva.py  --semilla 42 --generaciones 40 --sin-pausa --guardar-mejor mejor_red_42.pt
+
+<img width="498" height="170" alt="image" src="https://github.com/user-attachments/assets/995a7a0c-ec02-4121-a37e-36a66f03c972" />
+
+python3 robot_red_neuronal_evolutiva_1.py --cargar-red mejor_red_42.pt
+
+<img width="510" height="326" alt="image" src="https://github.com/user-attachments/assets/8e71fec3-04d0-45d0-984f-c8818dd4523c" />
+
