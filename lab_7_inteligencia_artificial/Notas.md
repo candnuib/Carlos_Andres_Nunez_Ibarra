@@ -112,3 +112,11 @@ Probar en un mapa distinto.
 Cambio de OBSTACULOS, INICIO o META en el archivo.
 
 <img width="388" height="161" alt="image" src="https://github.com/user-attachments/assets/5f9d818b-79e0-438e-8142-4622f635432b" />
+
+Ya modificado se vuelve a compilar el codigo para caegar sin evolucionar, tomando la mejor red.
+
+<img width="652" height="196" alt="image" src="https://github.com/user-attachments/assets/7523ec1e-baf7-4fc4-a749-460cf8260f17" />
+
+
+<img width="526" height="324" alt="image" src="https://github.com/user-attachments/assets/a7699a8d-8684-466b-86e0-c4c288488898" />
+
