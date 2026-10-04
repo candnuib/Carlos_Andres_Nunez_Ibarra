@@ -182,11 +182,13 @@ python3 robot_red_neuronal_evolutiva_1.py --cargar-red mejor_red_42.pt
 <img width="510" height="326" alt="image" src="https://github.com/user-attachments/assets/8e71fec3-04d0-45d0-984f-c8818dd4523c" />
 
 Análisis de la Prueba: Comportamiento ante un Entorno Modificado
+
 En esta prueba, tomamos el mejor modelo (la mejor red neuronal) obtenido tras entrenar a nuestra población en un mapa original utilizando una semilla específica. Este individuo había demostrado ser altamente eficiente (alto fitness) para llegar a la meta en su entorno de entrenamiento.
 
 Sin embargo, para evaluar su robustez, alteramos las condiciones del mapa: cambiamos el punto de inicio, movimos la meta y bloqueamos la ruta original con un muro. Ante este nuevo escenario, el modelo falló y quedó atrapado en un bucle infinito de colisiones y oscilaciones contra el muro.
 
 ¿Por qué ocurrió esto?
+
 El fracaso se debe a la naturaleza de la política puramente reactiva que desarrolló el modelo:
 
 Falta de memoria (Estado oculto): La red neuronal toma decisiones basándose únicamente en las lecturas instantáneas de sus sensores en ese preciso momento temporal, sin guardar un registro de sus acciones o estados pasados.
@@ -194,6 +196,7 @@ Falta de memoria (Estado oculto): La red neuronal toma decisiones basándose ún
 El Bucle Sensorial: Al acercarse al nuevo muro, los sensores detectan el obstáculo a corta distancia. La red procesa esta entrada y emite una orden de movimiento según los pesos que aprendió en el mapa original. Como el camino está bloqueado, el robot no avanza significativamente; por lo tanto, en el siguiente instante de tiempo, la lectura de los sensores es idéntica a la anterior. Al recibir la misma entrada, la red neuronal emite exactamente la misma salida, creando un ciclo repetitivo del que el robot no puede escapar.
 
 Conclusión: Evolución, Percepción Local y Generalización
+
 El comportamiento observado en esta prueba nos deja una lección fundamental sobre cómo interactúan el diseño de los sensores, los algoritmos evolutivos y la capacidad de adaptación de un modelo:
 
 Sobre la Evolución (El problema del Sobreajuste): El algoritmo evolutivo hizo exactamente lo que le pedimos: maximizar el fitness en el entorno de entrenamiento. La evolución optimizó los pesos de la red neuronal para resolver ese mapa en particular, encontrando atajos y patrones específicos de esa ruta. El modelo no evolucionó para "saber navegar", sino que evolucionó para "memorizar" una ruta específica, convirtiéndose en un sistema frágil ante los cambios.
