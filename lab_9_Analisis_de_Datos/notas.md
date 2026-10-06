@@ -28,3 +28,20 @@ python explorar_ventas_csv.py
 Muestra de datos:
 
 <img width="634" height="1019" alt="image" src="https://github.com/user-attachments/assets/00cfdabb-13af-4630-8bfc-fb64a78f0bdc" />
+
+Preguntas antes de sacar conclusiones:
+
+1 ¿Qué categoría suma más ventas? ¿Y cuál reúne más unidades?
+
+La categoria de bebidas es la que suma mas ventas.
+ 
+2 ¿Cuántas filas se descartaron y por qué?
+
+
+
+3 ¿Una venta total alta significa que se vendieron muchas unidades?
+
+No necesariamente, ya que depende del precio. Pero si es probable que si es una venta alta es por que se vendieron muchas unidades.
+
+4 ¿Qué información adicional necesitaríamos para explicar el resultado?
+
