@@ -92,3 +92,11 @@ sensores_actuales: Una representación en texto o múltiples columnas de lo que 
 casilla_repetida: Variable binaria (0 o 1) que documente si en ese paso el robot entró en un bucle al pisar una coordenada previamente visitada. Esto da evidencia directa de la penalización de ciclos del código.
 
 Propuesta de encabezado CSV final:generacion, episodio, paso, fila, columna, sensores_actuales, accion_anterior, accion, choque, casilla_repetida, distancia_meta, fitness.
+
+Tomando un ejemplo de internet, realice la extraccion de datos similar a el ejemplo proporcionado:
+
+<img width="1918" height="141" alt="image" src="https://github.com/user-attachments/assets/904899d9-763b-488b-9e4b-c1cee7a08b72" />
+
+<img width="698" height="993" alt="image" src="https://github.com/user-attachments/assets/74cdb37e-08e9-4d09-881a-e6df431a399b" />
+
+<img width="556" height="665" alt="image" src="https://github.com/user-attachments/assets/783e53df-a69b-4d3e-8611-07e673b27bc6" />
