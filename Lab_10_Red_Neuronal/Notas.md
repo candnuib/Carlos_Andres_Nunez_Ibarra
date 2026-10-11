@@ -39,8 +39,6 @@ Coeficiente de Determinación ($R^2$): -0.007
 
 Al ser muy copas variables, decidi agregar otras mas, el problemas con estas es que son de texto, la ventaja es que son de si o no, utilice una funcion la cual las conviere a 0 o 1 y con esos datos lo volvi a entrenar.
 
-<img width="1961" height="1594" alt="curva_aprendizaje" src="https://github.com/user-attachments/assets/568f3833-163e-4e64-8d53-c836bd82b4a4" />
-
 Resultado:
 
 <img width="647" height="284" alt="image" src="https://github.com/user-attachments/assets/243211bb-1094-47e7-9a9f-3344fc552397" />
@@ -74,3 +72,10 @@ Cuando aumentar las épocas hace que el modelo empeore, por lo general se debe a
 Modifique la tasa de aprendizaje de 0.1 a 0.001
 
 <img width="578" height="104" alt="image" src="https://github.com/user-attachments/assets/80ce5b1d-6ccc-44ad-b84a-5c36ee9ae79a" />
+
+Grafique los datos de mi mejor prueba y se ve asi: con el programa graficar_aprendizaje.py
+
+<img width="642" height="150" alt="image" src="https://github.com/user-attachments/assets/f95208dc-d8a6-44ff-8b1d-e6d246a24c9c" />
+
+
+<img width="1961" height="1594" alt="curva_aprendizaje" src="https://github.com/user-attachments/assets/85912e8c-0569-41ef-a16b-bba991cca9b6" />
