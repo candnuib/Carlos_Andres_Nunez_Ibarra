@@ -39,6 +39,8 @@ Coeficiente de Determinación ($R^2$): -0.007
 
 Al ser muy copas variables, decidi agregar otras mas, el problemas con estas es que son de texto, la ventaja es que son de si o no, utilice una funcion la cual las conviere a 0 o 1 y con esos datos lo volvi a entrenar.
 
+<img width="1961" height="1594" alt="curva_aprendizaje" src="https://github.com/user-attachments/assets/568f3833-163e-4e64-8d53-c836bd82b4a4" />
+
 Resultado:
 
 <img width="647" height="284" alt="image" src="https://github.com/user-attachments/assets/243211bb-1094-47e7-9a9f-3344fc552397" />
